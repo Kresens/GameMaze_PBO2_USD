@@ -61,4 +61,12 @@ public class Pixel {
             return false;
         }
     }
+       
+       public boolean PosisiAtasObjek(Pixel Objek) {
+        if (((this.getPosisiY() - Jarak) == Objek.getPosisiY()) && (this.getPosisiX() == Objek.getPosisiX())) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
