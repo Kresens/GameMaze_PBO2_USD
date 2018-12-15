@@ -126,7 +126,9 @@ public class Peta extends JPanel{
                           }
                       }
                   }  else if (in[0].equalsIgnoreCase("d")) {
-                      
+                      for (int i = 0; i < Integer.parseInt(String.valueOf(in[1])); i++) {
+                          
+                      }
                   }
               }
           }
