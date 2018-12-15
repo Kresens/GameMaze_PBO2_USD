@@ -19,6 +19,7 @@ public class Pemain extends Pixel{
         URL loc = this.getClass().getResource("pemain.jpg");
         ImageIcon iia = new ImageIcon(loc);
         Image image = iia.getImage();
+        this.setImage(image);
     }
     
 }
