@@ -108,6 +108,9 @@ public class Peta extends JPanel{
           String in[] = input.split(" ");
           if (in.length > 2) {
               JOptionPane.showMessageDialog(null, "Jumlah kata lebih dari 2");
+              
+          }  else if (in.length == 2) {
+              
           }
       }
 }
