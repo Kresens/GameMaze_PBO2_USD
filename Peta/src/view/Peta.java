@@ -86,5 +86,8 @@ public class Peta extends JPanel{
           g.fillRect(0, 0, this.getLebar(), this.getTinggi());
           Peta.addAll(tembok);
           Peta.add(maze);
+          for (int i = 0; i < map.size(); i++) {
+              
+          }
         }
 }
