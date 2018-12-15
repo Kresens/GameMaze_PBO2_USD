@@ -17,13 +17,13 @@ import model.Pemain;
 public class Peta extends JPanel{
     private ArrayList tembok = new ArrayList();
     private ArrayList bola = new ArrayList();
-    private ArrayList gawang = new ArrayList();
-    private ArrayList map = new ArrayList();
+    private ArrayList Peta = new ArrayList();
     
     private Pemain maze;
     private int lebar = 0;
     private int tinggi = 0;
     private int jarak = 20;
-    private File Alamatpeta;
     
+    private File Alamatpeta;
+    private ArrayList Allperintah = new ArrayList();
 }
