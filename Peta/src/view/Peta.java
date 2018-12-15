@@ -142,7 +142,7 @@ public class Peta extends JPanel {
                         if (cekObjekNabrakTembok(maze, "r")) {
                             return;
                         } else if (cekBolaPemainTembok("r")) {
-                            
+                            return;
                         }
                     }
                 }
