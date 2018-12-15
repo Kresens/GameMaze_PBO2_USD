@@ -169,7 +169,7 @@ public class Peta extends JPanel {
                 JOptionPane.showMessageDialog(null, "Kata Tidak Dikenal");
             }
         } else {
-            
+            JOptionPane.showMessageDialog(null, "Jumlah kata hanya satu");
         }
     }
 
