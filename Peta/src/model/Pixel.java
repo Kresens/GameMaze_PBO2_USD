@@ -21,4 +21,8 @@ public class Pixel {
         this.posisiX = x;
         this.posisiY = y;
     }
+     
+     public int getPosisiX() {
+        return posisiX;
+    }
 }
