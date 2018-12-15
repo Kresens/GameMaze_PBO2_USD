@@ -118,7 +118,7 @@ public class Peta extends JPanel {
                         if (cekObjekNabrakTembok(maze, "u")) {
                             return;
 
-                        } else if (cekBolaPemainTembok("u")) {
+                        } else if (cekPemainTembok("u")) {
                             return;
 
                         } else {
@@ -130,7 +130,7 @@ public class Peta extends JPanel {
                     for (int i = 0; i < Integer.parseInt(String.valueOf(in[1])); i++) {
                         if (cekObjekNabrakTembok(maze, "d")) {
                             return;
-                        } else if (cekBolaPemainTembok("d")) {
+                        } else if (cekPemainTembok("d")) {
                             return;
                         } else {
                             maze.Gerak(0, jarak);
@@ -141,7 +141,7 @@ public class Peta extends JPanel {
                     for (int i = 0; i < Integer.parseInt(String.valueOf(in[1])); i++) {
                         if (cekObjekNabrakTembok(maze, "r")) {
                             return;
-                        } else if (cekBolaPemainTembok("r")) {
+                        } else if (cekPemainTembok("r")) {
                             return;
                         } else {
                             maze.Gerak(jarak, 0);
@@ -153,7 +153,7 @@ public class Peta extends JPanel {
                         if (cekObjekNabrakTembok(maze, "l")) {
                             return;
                             
-                        } else if (cekBolaPemainTembok("l")) {
+                        } else if (cekPemainTembok("l")) {
                              return;
                         } else {
                             maze.Gerak(-jarak, 0);
@@ -173,11 +173,11 @@ public class Peta extends JPanel {
         }
     }
 
-    private boolean cekObjekNabrakTembok(Pemain maze, String u) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    private boolean cekObjekNabrakTembok(Pixel pemain, String input) {
+        
     }
 
-    private boolean cekBolaPemainTembok(String u) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    private boolean cekPemainTembok(String u) {
+        
     }
 }
