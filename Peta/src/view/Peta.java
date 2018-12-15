@@ -152,18 +152,18 @@ public class Peta extends JPanel {
                     for (int i = 0; i < Integer.parseInt(String.valueOf(in[1])); i++) {
                         if (cekObjekNabrakTembok(maze, "l")) {
                             return;
-                            
+
                         } else if (cekPemainTembok("l")) {
-                             return;
+                            return;
                         } else {
                             maze.Gerak(-jarak, 0);
                             repaint();
                         }
                     }
                 } else if (in[0].equalsIgnoreCase("z")) {
-                    
-                }  else {
-                     JOptionPane.showMessageDialog(null, "Kata Tidak Dikenal");
+
+                } else {
+                    JOptionPane.showMessageDialog(null, "Kata Tidak Dikenal");
                 }
             } else {
                 JOptionPane.showMessageDialog(null, "Kata Tidak Dikenal");
@@ -183,9 +183,18 @@ public class Peta extends JPanel {
                     break;
                 }
             }
+        }  else if (input.equalsIgnoreCase("r")) {
+            for (int i = 0; i < tembok.size(); i++) {
+                Tembok wall = (Tembok) tembok.get(i);//ambil posisi tembok
+                if (pemain.PosisiKananObjek(wall)) {
+                    bantu = true;
+                    break;
+                }
+            }
+        }
     }
 
     private boolean cekPemainTembok(String u) {
-        
+
     }
 }
