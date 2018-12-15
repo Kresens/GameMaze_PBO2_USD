@@ -62,6 +62,7 @@ public class Peta extends JPanel{
                     } else if (item == '.') {
                         posisiX += jarak;
                     }
+                    tinggi = posisiY;
                 }
                    
                }
