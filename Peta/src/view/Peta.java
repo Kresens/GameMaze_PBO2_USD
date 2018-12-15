@@ -5,6 +5,7 @@
  */
 package view;
 
+import static com.sun.org.apache.xalan.internal.lib.ExsltDynamic.map;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.io.File;
@@ -14,6 +15,8 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JPanel;
+import static jdk.nashorn.internal.objects.NativeArray.map;
+import static jdk.nashorn.internal.objects.NativeDebug.map;
 import model.Pemain;
 import model.Tembok;
 
@@ -81,5 +84,6 @@ public class Peta extends JPanel{
           super.paintComponent(g);
           g.setColor(new Color(255, 255, 255));
           g.fillRect(0, 0, this.getLebar(), this.getTinggi());
+          map.addAll(tembok);
         }
 }
