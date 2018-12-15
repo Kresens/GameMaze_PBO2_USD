@@ -73,5 +73,7 @@ public class Peta extends JPanel{
          Logger.getLogger(Peta.class.getName()).log(Level.SEVERE, null, ex);
         }
      }
+     
+      @Override
         }
 }
