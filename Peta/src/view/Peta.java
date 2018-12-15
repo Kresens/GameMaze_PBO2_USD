@@ -5,6 +5,7 @@
  */
 package view;
 
+import java.util.ArrayList;
 import javax.swing.JPanel;
 
 /**
@@ -12,5 +13,5 @@ import javax.swing.JPanel;
  * @author Priska
  */
 public class Peta extends JPanel{
-    
+    private ArrayList tembok = new ArrayList();
 }
