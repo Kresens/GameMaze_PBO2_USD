@@ -219,4 +219,8 @@ public class Peta extends JPanel {
         }
         return bantu;
     }
+    
+    public int getPoin() {
+        
+    }
 }
