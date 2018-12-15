@@ -100,6 +100,6 @@ public class Peta extends JPanel{
       }
       
       public int getTinggi() {
-          
+          return this.tinggi;
       }
 }
