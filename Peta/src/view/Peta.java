@@ -94,4 +94,8 @@ public class Peta extends JPanel{
               }
           }
         }
+      
+      public int getLebar() {
+          
+      }
 }
