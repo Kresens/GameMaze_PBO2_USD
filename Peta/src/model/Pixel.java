@@ -12,7 +12,13 @@ import java.awt.Image;
  * @author Priska
  */
 public class Pixel {
-     private int posisiX;
+    private int posisiX;
     private int posisiY;
     private Image image;
+    private int Jarak = 20;
+    
+     public Pixel(int x, int y) {
+        this.posisiX = x;
+        this.posisiY = y;
+    }
 }
