@@ -118,9 +118,6 @@ public class Peta extends JPanel {
                         if (cekObjekNabrakTembok(maze, "u")) {
                             return;
 
-                        } else if (cekPemainTembok("u")) {
-                            return;
-
                         } else {
                             maze.Gerak(0, -jarak);
                             repaint();
