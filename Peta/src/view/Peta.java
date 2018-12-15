@@ -138,7 +138,10 @@ public class Peta extends JPanel {
                         }
                     }
                 } else if (in[0].equalsIgnoreCase("r")) {
-                    
+                    for (int i = 0; i < Integer.parseInt(String.valueOf(in[1])); i++) {
+                        if (cekObjekNabrakTembok(maze, "r")) {
+                            return;
+                        }
                 }
             }
         }
