@@ -114,10 +114,16 @@ public class Peta extends JPanel{
                   Allperintah.add(input);
                   if (in[0].equalsIgnoreCase("u")) {
                       for (int i = 0; i < Integer.parseInt(String.valueOf(in[1])); i++) {
-                          
+                          if (cekObjekNabrakTembok(maze, "u")) {
+                              
+                          }
                       }
                   }
               }
           }
       }
+
+    private boolean cekObjekNabrakTembok(Pemain maze, String u) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
