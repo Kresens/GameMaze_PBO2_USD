@@ -6,6 +6,7 @@
 package view;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.util.ArrayList;
 import javax.swing.JPanel;
 import model.Pemain;
@@ -34,7 +35,8 @@ public class Peta extends JPanel{
      public void setPeta(File file) {
           try {
                if (file != null) {
-                   
+                   FileInputStream input = new FileInputStream(file);
+                   Alamatpeta = file;
                }
      }
         }
