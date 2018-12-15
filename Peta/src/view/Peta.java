@@ -154,7 +154,7 @@ public class Peta extends JPanel {
                             return;
                             
                         } else if (cekBolaPemainTembok("l")) {
-                            
+                             return;
                         }
                     }
                 }
