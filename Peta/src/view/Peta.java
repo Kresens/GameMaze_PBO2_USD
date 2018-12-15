@@ -110,7 +110,9 @@ public class Peta extends JPanel{
               JOptionPane.showMessageDialog(null, "Jumlah kata lebih dari 2");
               
           }  else if (in.length == 2) {
-              
+              if (in[0].matches("[udrlz]")) {
+                  
+              }
           }
       }
 }
