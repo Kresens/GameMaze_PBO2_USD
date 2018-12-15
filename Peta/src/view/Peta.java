@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import static jdk.nashorn.internal.objects.NativeArray.map;
 import static jdk.nashorn.internal.objects.NativeDebug.map;
@@ -106,7 +107,7 @@ public class Peta extends JPanel{
       public void PerintahGerak(String input) {
           String in[] = input.split(" ");
           if (in.length > 2) {
-              
+              JOptionPane.showMessageDialog(null, "Jumlah kata lebih dari 2");
           }
       }
 }
