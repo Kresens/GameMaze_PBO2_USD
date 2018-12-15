@@ -112,6 +112,9 @@ public class Peta extends JPanel{
           }  else if (in.length == 2) {
               if (in[0].matches("[udrlz]")) {
                   Allperintah.add(input);
+                  if (in[0].equalsIgnoreCase("u")) {
+                      
+                  }
               }
           }
       }
