@@ -42,6 +42,10 @@ public class Peta extends JPanel{
                    int posisiY = 0;
                    Tembok wall;
                    int data;
+                
+                while ((data = input.read()) != -1) {
+                    
+                }
                    
                }
      }
