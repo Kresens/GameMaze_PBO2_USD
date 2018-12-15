@@ -26,5 +26,6 @@ public class Pemain extends Pixel{
          int nx = this.getPosisiX() + x;
          int ny = this.getPosisiY() + y;
          this.setPosisiX(nx);
+         this.setPosisiY(ny);
     }
 }
