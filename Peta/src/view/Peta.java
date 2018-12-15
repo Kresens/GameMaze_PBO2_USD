@@ -5,6 +5,7 @@
  */
 package view;
 
+import java.awt.Graphics;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -75,5 +76,6 @@ public class Peta extends JPanel{
      }
      
       @Override
+      public void paintComponent(Graphics g) {
         }
 }
