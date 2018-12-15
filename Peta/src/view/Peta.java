@@ -5,6 +5,7 @@
  */
 package view;
 
+import java.io.File;
 import java.util.ArrayList;
 import javax.swing.JPanel;
 import model.Pemain;
@@ -18,8 +19,11 @@ public class Peta extends JPanel{
     private ArrayList bola = new ArrayList();
     private ArrayList gawang = new ArrayList();
     private ArrayList map = new ArrayList();
-    private Pemain soko;
+    
+    private Pemain maze;
     private int lebar = 0;
     private int tinggi = 0;
     private int jarak = 20;
+    private File Alamatpeta;
+    
 }
