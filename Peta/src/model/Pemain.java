@@ -5,6 +5,8 @@
  */
 package model;
 
+import java.net.URL;
+
 /**
  *
  * @author Priska
@@ -12,5 +14,7 @@ package model;
 public class Pemain extends Pixel{
     public Pemain(int x, int y) {
         super(x, y);
+        URL loc = this.getClass().getResource("pemain.jpg");
     }
+    
 }
