@@ -57,6 +57,7 @@ public class Peta extends JPanel{
                         
                     } else if (item == '@') {
                         maze = new Pemain(posisiX, posisiY);
+                        posisiX += jarak;
                         
                     }
                 }
