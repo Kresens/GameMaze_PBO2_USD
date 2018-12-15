@@ -26,4 +26,9 @@ public class Peta extends JPanel{
     
     private File Alamatpeta;
     private ArrayList Allperintah = new ArrayList();
+    
+    public Peta(File file) {
+        setPeta(file);
+    }
+    
 }
