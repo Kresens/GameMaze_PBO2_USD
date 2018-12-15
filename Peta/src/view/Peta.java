@@ -211,4 +211,8 @@ public class Peta extends JPanel {
         setPeta(Alamatpeta);
         repaint();
     }
+    
+    public String getTeksPerintah() {
+        
+    }
 }
