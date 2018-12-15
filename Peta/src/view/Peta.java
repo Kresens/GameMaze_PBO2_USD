@@ -104,6 +104,6 @@ public class Peta extends JPanel{
       }
       
       public void PerintahGerak(String input) {
-          
+          String in[] = input.split(" ");
       }
 }
