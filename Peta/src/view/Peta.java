@@ -203,5 +203,9 @@ public class Peta extends JPanel {
         }
         return bantu;
     }
-
+    
+    public void restartLevel() {
+        Allperintah.clear();
+        
+    }
 }
