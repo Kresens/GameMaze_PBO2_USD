@@ -29,4 +29,8 @@ public class Pixel {
      public void setPosisiX(int posisiX) {
         this.posisiX = posisiX;
     }
+     
+      public int getPosisiY() {
+        return posisiY;
+    }
 }
