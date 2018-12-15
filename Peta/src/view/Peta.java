@@ -84,6 +84,7 @@ public class Peta extends JPanel{
           super.paintComponent(g);
           g.setColor(new Color(255, 255, 255));
           g.fillRect(0, 0, this.getLebar(), this.getTinggi());
-          map.addAll(tembok);
+          Peta.addAll(tembok);
+          Peta.add(maze);
         }
 }
