@@ -206,6 +206,9 @@ public class Peta extends JPanel {
     
     public void restartLevel() {
         Allperintah.clear();
-        
+        tembok.clear();
+        Peta.clear();
+        setPeta(Alamatpeta);
+        repaint();
     }
 }
