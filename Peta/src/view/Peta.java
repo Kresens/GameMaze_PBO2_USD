@@ -121,7 +121,8 @@ public class Peta extends JPanel{
                               return;
                               
                           } else {
-                              
+                              maze.Gerak(0, -jarak);
+                              repaint();
                           }
                       }
                   }
