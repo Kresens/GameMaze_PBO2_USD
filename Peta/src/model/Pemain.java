@@ -24,5 +24,6 @@ public class Pemain extends Pixel{
     
     public void Gerak(int x, int y) {
          int nx = this.getPosisiX() + x;
+         int ny = this.getPosisiY() + y;
     }
 }
