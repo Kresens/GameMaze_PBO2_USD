@@ -45,4 +45,12 @@ public class Pixel {
       public void setImage(Image image) {
         this.image = image;
     }
+      
+       public boolean PosisiKiriObjek(Pixel Objek) {
+        if (((this.getPosisiX() - Jarak) == Objek.getPosisiX()) && (this.getPosisiY() == Objek.getPosisiY())) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
