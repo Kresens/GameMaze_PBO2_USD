@@ -116,6 +116,9 @@ public class Peta extends JPanel{
                       for (int i = 0; i < Integer.parseInt(String.valueOf(in[1])); i++) {
                           if (cekObjekNabrakTembok(maze, "u")) {
                                return;
+                               
+                          } else if (cekBolaPemainTembok("u")) {
+                              
                           }
                       }
                   }
