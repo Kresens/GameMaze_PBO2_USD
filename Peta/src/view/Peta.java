@@ -278,5 +278,22 @@ public class Peta extends JPanel {
         }
         return bantu; 
             }
+
+    private void isCompleted() {
+        int jumBola = bola.size();//jumlah bola
+        int goal = 0;
+        for (int i = 0; i < bola.size(); i++) {
+            Bola bol = (Bola) bola.get(i);//ambil posisi bola
+            for (int j = 0; j < gawang.size(); j++) {
+                Gawang gaw = (Gawang) gawang.get(j);//ambil posisi gawang
+                if (bol.getPosisiX() == gaw.getPosisiX() && bol.getPosisiY() == gaw.getPosisiY()) {//cek posisi bola sama dengan bola.
+                    goal += 1;
+                }
+            }
+        }
+        if (goal == jumBola) {//jika semua gawang sudah terisi bola
+            JOptionPane.showMessageDialog(null, "Selamat anda berhasil menyelesaikan game ini.");
+        }
+    }
 }
    
