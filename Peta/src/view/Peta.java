@@ -211,11 +211,7 @@ public class Peta extends JPanel {
         return bantu;
     }
 
-    private boolean cekPemainTembok(Pixel objek, String input) {
-        boolean bantu = false;
-        if (input.equalsIgnoreCase("l")) {
-            
-        }
-
+    private boolean cekPemainTembok(String input) {
+        
     }
 }
