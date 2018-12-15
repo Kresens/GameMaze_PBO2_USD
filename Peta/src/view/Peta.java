@@ -130,7 +130,7 @@ public class Peta extends JPanel {
                     for (int i = 0; i < Integer.parseInt(String.valueOf(in[1])); i++) {
                         if (cekObjekNabrakTembok(maze, "d")) {
                             return;
-                  
+
                         } else {
                             maze.Gerak(0, jarak);
                             repaint();
@@ -140,7 +140,7 @@ public class Peta extends JPanel {
                     for (int i = 0; i < Integer.parseInt(String.valueOf(in[1])); i++) {
                         if (cekObjekNabrakTembok(maze, "r")) {
                             return;
-                        
+
                         } else {
                             maze.Gerak(jarak, 0);
                             repaint();
@@ -151,7 +151,6 @@ public class Peta extends JPanel {
                         if (cekObjekNabrakTembok(maze, "l")) {
                             return;
 
-                        
                         } else {
                             maze.Gerak(-jarak, 0);
                             repaint();
@@ -180,7 +179,7 @@ public class Peta extends JPanel {
                     break;
                 }
             }
-        }  else if (input.equalsIgnoreCase("r")) {
+        } else if (input.equalsIgnoreCase("r")) {
             for (int i = 0; i < tembok.size(); i++) {
                 Tembok wall = (Tembok) tembok.get(i);
                 if (pemain.PosisiKananObjek(wall)) {
@@ -208,8 +207,4 @@ public class Peta extends JPanel {
         return bantu;
     }
 
-    
-
-    
 }
-   
