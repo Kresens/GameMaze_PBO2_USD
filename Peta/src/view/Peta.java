@@ -37,6 +37,8 @@ public class Peta extends JPanel{
                if (file != null) {
                    FileInputStream input = new FileInputStream(file);
                    Alamatpeta = file;
+                   int posisiX = 0;
+                   int posisiY = 0;
                }
      }
         }
