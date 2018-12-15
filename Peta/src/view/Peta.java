@@ -44,7 +44,7 @@ public class Peta extends JPanel{
                    int data;
                 
                 while ((data = input.read()) != -1) {
-                    
+                    char item = (char) data;
                 }
                    
                }
