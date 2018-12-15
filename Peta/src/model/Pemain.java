@@ -11,4 +11,6 @@ package model;
  */
 public class Pemain extends Pixel{
     public Pemain(int x, int y) {
+        super(x, y);
+    }
 }
