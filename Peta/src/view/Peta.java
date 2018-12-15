@@ -193,7 +193,7 @@ public class Peta extends JPanel {
             }
         } else if (input.equalsIgnoreCase("u")) {
             for (int i = 0; i < tembok.size(); i++) {
-                Tembok wall = (Tembok) tembok.get(i);//ambil posisi tembok
+                Tembok wall = (Tembok) tembok.get(i);
                 if (pemain.PosisiAtasObjek(wall)) {
                     bantu = true;
                     break;
@@ -201,7 +201,7 @@ public class Peta extends JPanel {
             }
         } else if (input.equalsIgnoreCase("d")) {
             for (int i = 0; i < tembok.size(); i++) {
-                Tembok wall = (Tembok) tembok.get(i);//ambil posisi tembok
+                Tembok wall = (Tembok) tembok.get(i);
                 if (pemain.PosisiBawahObjek(wall)) {
                     bantu = true;
                     break;
@@ -211,7 +211,7 @@ public class Peta extends JPanel {
         return bantu;
     }
 
-    private boolean cekPemainTembok(String u) {
+    private boolean cekPemainTembok(Pixel objek, String input) {
 
     }
 }
