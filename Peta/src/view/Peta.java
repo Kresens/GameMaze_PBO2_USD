@@ -15,4 +15,5 @@ import javax.swing.JPanel;
 public class Peta extends JPanel{
     private ArrayList tembok = new ArrayList();
     private ArrayList bola = new ArrayList();
+    private ArrayList gawang = new ArrayList();
 }
