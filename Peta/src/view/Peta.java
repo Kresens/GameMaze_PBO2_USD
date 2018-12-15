@@ -80,5 +80,6 @@ public class Peta extends JPanel{
       public void paintComponent(Graphics g) {
           super.paintComponent(g);
           g.setColor(new Color(255, 255, 255));
+          g.fillRect(0, 0, this.getLebar(), this.getTinggi());
         }
 }
