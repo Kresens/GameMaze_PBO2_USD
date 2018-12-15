@@ -22,4 +22,7 @@ public class Pemain extends Pixel{
         this.setImage(image);
     }
     
+    public void Gerak(int x, int y) {
+        
+    }
 }
