@@ -5,10 +5,14 @@
  */
 package model;
 
+import java.awt.Image;
+
 /**
  *
  * @author Priska
  */
 public class Pixel {
-    
+     private int posisiX;
+    private int posisiY;
+    private Image image;
 }
