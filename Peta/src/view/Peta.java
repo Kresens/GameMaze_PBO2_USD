@@ -213,6 +213,10 @@ public class Peta extends JPanel {
     }
     
     public String getTeksPerintah() {
-        
+         String bantu = "";
+        for (int i = 0; i < Allperintah.size(); i++) {
+            bantu = bantu + Allperintah.get(i) + " ";
+        }
+        return bantu;
     }
 }
