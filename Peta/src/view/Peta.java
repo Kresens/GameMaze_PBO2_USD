@@ -90,7 +90,7 @@ public class Peta extends JPanel{
           for (int i = 0; i < Peta.size(); i++) {
               if (Peta.get(i) != null) {
                   Pixel item = (Pixel) Peta.get(i);
-                  
+                  g.drawImage(item.getImage(), item.getPosisiX(), item.getPosisiY(), this);
               }
           }
         }
