@@ -20,5 +20,6 @@ public class Peta extends JPanel{
     private ArrayList map = new ArrayList();
     private Pemain soko;
     private int lebar = 0;
-    
+    private int tinggi = 0;
+    private int jarak = 20;
 }
