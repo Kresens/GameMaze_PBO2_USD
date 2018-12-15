@@ -5,6 +5,7 @@
  */
 package view;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.io.File;
 import java.io.FileInputStream;
@@ -78,5 +79,6 @@ public class Peta extends JPanel{
       @Override
       public void paintComponent(Graphics g) {
           super.paintComponent(g);
+          g.setColor(new Color(255, 255, 255));
         }
 }
