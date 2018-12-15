@@ -10,5 +10,5 @@ package model;
  * @author Priska
  */
 public class Pemain extends Pixel{
-    
+    public Pemain(int x, int y) {
 }
