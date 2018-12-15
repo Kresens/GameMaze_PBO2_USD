@@ -33,4 +33,8 @@ public class Pixel {
       public int getPosisiY() {
         return posisiY;
     }
+      
+      public void setPosisiY(int posisiY) {
+        this.posisiY = posisiY;
+    }
 }
