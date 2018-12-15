@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sokoban_game;
+package view;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.io.File;
 import javax.swing.JFileChooser;
+import view.Peta;
 
 
 public class Maze extends javax.swing.JFrame {
