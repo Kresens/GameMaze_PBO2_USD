@@ -33,7 +33,9 @@ public class Peta extends JPanel{
     
      public void setPeta(File file) {
           try {
-              
+               if (file != null) {
+                   
+               }
      }
         }
 }
