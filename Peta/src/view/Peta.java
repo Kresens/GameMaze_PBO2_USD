@@ -39,6 +39,8 @@ public class Peta extends JPanel{
                    Alamatpeta = file;
                    int posisiX = 0;
                    int posisiY = 0;
+                   Tembok wall;
+                   Bola b;
                }
      }
         }
