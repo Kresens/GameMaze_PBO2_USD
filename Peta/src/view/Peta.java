@@ -7,7 +7,10 @@ package view;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JPanel;
 import model.Pemain;
 import model.Tembok;
@@ -66,6 +69,9 @@ public class Peta extends JPanel{
                 }
                    
                }
+     } catch (IOException ex) {
+         Logger.getLogger(Peta.class.getName()).log(Level.SEVERE, null, ex);
+        }
      }
         }
 }
