@@ -165,7 +165,8 @@ public class Peta extends JPanel {
                 }  else {
                      JOptionPane.showMessageDialog(null, "Kata Tidak Dikenal");
                 }
-
+            } else {
+                JOptionPane.showMessageDialog(null, "Kata Tidak Dikenal");
             }
         }
     }
