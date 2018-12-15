@@ -13,7 +13,7 @@ import view.Peta;
 
 
 public class Maze extends javax.swing.JFrame {
-    Peta peta;
+    Peta Peta;
     File file;
 
     
@@ -193,8 +193,8 @@ public class Maze extends javax.swing.JFrame {
 
     private void perintahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_perintahActionPerformed
         // TODO add your handling code here:
-        peta.PerintahGerak(perintah.getText());
-        tekarea.setText(peta.getTeksPerintah());
+        Peta.PerintahGerak(perintah.getText());
+        tekarea.setText(Peta.getTeksPerintah());
         perintah.setText("");
     }//GEN-LAST:event_perintahActionPerformed
 
@@ -205,17 +205,17 @@ public class Maze extends javax.swing.JFrame {
         int returnVal = jFileChooser1.showOpenDialog(this);
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             file = jFileChooser1.getSelectedFile();
-            peta = new Peta(file);
-            PixelPanel.add(peta);
-            peta.setSize(peta.getLebar(), peta.getTinggi());
+            Peta = new Peta(file);
+            PixelPanel.add(Peta);
+            Peta.setSize(Peta.getLebar(), Peta.getTinggi());
 
-            //Setelah diset panel pixel, kita letakan posisi peta sokoban ditengah pixel panel
+            //Setelah diset panel pixel, kita letakan posisi Peta sokoban ditengah pixel panel
             int lebar = PixelPanel.getWidth();
             int tinggi = PixelPanel.getHeight();
             //mendapatkan titik koordinat x,y
-            int x = (lebar - peta.getWidth()) / 2;
-            int y = (tinggi - peta.getHeight()) / 2;
-            peta.setLocation(x, y);
+            int x = (lebar - Peta.getWidth()) / 2;
+            int y = (tinggi - Peta.getHeight()) / 2;
+            Peta.setLocation(x, y);
 
         }
 
@@ -223,7 +223,7 @@ public class Maze extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        peta.restartLevel();
+        Peta.restartLevel();
         perintah.setText("");
     }//GEN-LAST:event_jButton1ActionPerformed
 
