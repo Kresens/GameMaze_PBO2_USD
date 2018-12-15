@@ -10,6 +10,7 @@ import java.io.FileInputStream;
 import java.util.ArrayList;
 import javax.swing.JPanel;
 import model.Pemain;
+import model.Tembok;
 
 /**
  *
@@ -40,7 +41,7 @@ public class Peta extends JPanel{
                    int posisiX = 0;
                    int posisiY = 0;
                    Tembok wall;
-                   Bola b;
+                   
                }
      }
         }
