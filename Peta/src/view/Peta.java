@@ -221,6 +221,10 @@ public class Peta extends JPanel {
     }
     
     public int getPoin() {
-        
+        int bantu = Allperintah.size();
+         if (bantu<20) {
+             JOptionPane.showMessageDialog(this, Peta);
+         }
+        return bantu;
     }
 }
