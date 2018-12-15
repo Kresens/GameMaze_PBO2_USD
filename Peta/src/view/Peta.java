@@ -52,6 +52,7 @@ public class Peta extends JPanel{
                     } else if (item == '#') {
                         wall = new Tembok(posisiX, posisiY);
                         tembok.add(wall);
+                        posisiX += jarak;
                     }
                 }
                    
