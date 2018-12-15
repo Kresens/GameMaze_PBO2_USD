@@ -14,6 +14,10 @@ import javax.swing.ImageIcon;
  * @author Priska
  */
 public class Tembok extends Pixel{
+
+    public static int size() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
      public Tembok(int x, int y) {
         super(x, y);
         URL loc = this.getClass().getResource("tembok.jpg");

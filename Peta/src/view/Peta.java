@@ -130,8 +130,7 @@ public class Peta extends JPanel {
                     for (int i = 0; i < Integer.parseInt(String.valueOf(in[1])); i++) {
                         if (cekObjekNabrakTembok(maze, "d")) {
                             return;
-                        } else if (cekPemainTembok("d")) {
-                            return;
+                  
                         } else {
                             maze.Gerak(0, jarak);
                             repaint();
@@ -141,8 +140,7 @@ public class Peta extends JPanel {
                     for (int i = 0; i < Integer.parseInt(String.valueOf(in[1])); i++) {
                         if (cekObjekNabrakTembok(maze, "r")) {
                             return;
-                        } else if (cekPemainTembok("r")) {
-                            return;
+                        
                         } else {
                             maze.Gerak(jarak, 0);
                             repaint();
@@ -153,8 +151,7 @@ public class Peta extends JPanel {
                         if (cekObjekNabrakTembok(maze, "l")) {
                             return;
 
-                        } else if (cekPemainTembok("l")) {
-                            return;
+                        
                         } else {
                             maze.Gerak(-jarak, 0);
                             repaint();
@@ -211,89 +208,8 @@ public class Peta extends JPanel {
         return bantu;
     }
 
-    private boolean cekPemainTembok(String input) {
-         boolean bantu = false;
-        if (input.equalsIgnoreCase("l")) {
-            for (int i = 0; i < bola.size(); i++) {
-                if (cekBolaNabrakBola(bol1, "l")) {//cek apakah bola ke satu nabrak tembok.
-                        bantu = true;//ya, tidak boleh bergerak.
-                        break;//hentikan proses looping i
-                    } else if (cekObjekNabrakTembok(bol1, "l")) {//cek apakah bola ke satu nabrak tembok.
-                        bantu = true;//ya, tidak boleh bergerak.
-                        break;//hentikan proses looping i
-                    } else {
-                        bol1.Gerak(-jarak, 0);//bola ikut bergerak ke kiri
-                        isCompleted();
-                    }
-                }
-        } else if (input.equalsIgnoreCase("r")) {
-            for (int i = 0; i < bola.size(); i++) {
-                Bola bol1 = (Bola) bola.get(i);//ambil posisi bola
-                if (soko.PosisiKananObjek(bol1)) {//cek apakah pemain sebelah kanan bola ke i
-                    if (cekBolaNabrakBola(bol1, "r")) {//cek apakah bola ke satu nabrak tembok.
-                        bantu = true;//ya, tidak boleh bergerak.
-                        break;//hentikan proses looping i
-                    } else if (cekObjekNabrakTembok(bol1, "r")) {//cek apakah bola ke satu nabrak tembok.
-                        bantu = true;//ya, tidak boleh bergerak.
-                        break;//hentikan proses looping i
-                    } else {
-                        bol1.Gerak(jarak, 0);//bola ikut bergerak ke kanan
-                        isCompleted();
-                    }
-                }
-            }
-        } else if (input.equalsIgnoreCase("u")) {
-            for (int i = 0; i < bola.size(); i++) {
-                Bola bol1 = (Bola) bola.get(i);//ambil posisi bola
-                if (soko.PosisiAtasObjek(bol1)) {//cek apakah bola 1 di atas pemain
-                    if (cekBolaNabrakBola(bol1, "u")) {//cek apakah bola ke satu nabrak tembok.
-                        bantu = true;//ya, tidak boleh bergerak.
-                        break;//hentikan proses looping i
-                    } else if (cekObjekNabrakTembok(bol1, "u")) {//cek apakah bola ke satu nabrak tembok.
-                        bantu = true;//ya, tidak boleh bergerak.
-                        break;//hentikan proses looping i
-                    } else {
-                        bol1.Gerak(0, -jarak);;//bola ikut bergerak ke atas
-                        isCompleted();
-                    }
-                }
-            }
-        } else if (input.equalsIgnoreCase("d")) {
-            for (int i = 0; i < bola.size(); i++) {
-                Bola bol1 = (Bola) bola.get(i);//ambil posisi bola
-                if (soko.PosisiBawahObjek(bol1)) {//cek apakah bola 1 di bawah pemain
-                    if (cekBolaNabrakBola(bol1, "d")) {//cek apakah bola ke satu nabrak tembok.
-                        bantu = true;//ya, tidak boleh bergerak.
-                        break;//hentikan proses looping i
-                    } else if (cekObjekNabrakTembok(bol1, "d")) {//cek apakah bola ke satu nabrak tembok.
-                        bantu = true;//ya, tidak boleh bergerak.
-                        break;//hentikan proses looping i
-                    } else {
+    
 
-                        bol1.Gerak(0, jarak);;//bola ikut bergerak ke bawah
-                        isCompleted();
-                    }
-                }
-            }
-        }
-        return bantu; 
-            }
-
-    private void isCompleted() {
-        int jumBola = bola.size();//jumlah bola
-        int goal = 0;
-        for (int i = 0; i < bola.size(); i++) {
-            Bola bol = (Bola) bola.get(i);//ambil posisi bola
-            for (int j = 0; j < gawang.size(); j++) {
-                Gawang gaw = (Gawang) gawang.get(j);//ambil posisi gawang
-                if (bol.getPosisiX() == gaw.getPosisiX() && bol.getPosisiY() == gaw.getPosisiY()) {//cek posisi bola sama dengan bola.
-                    goal += 1;
-                }
-            }
-        }
-        if (goal == jumBola) {//jika semua gawang sudah terisi bola
-            JOptionPane.showMessageDialog(null, "Selamat anda berhasil menyelesaikan game ini.");
-        }
-    }
+    
 }
    
