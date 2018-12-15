@@ -9,6 +9,6 @@ package model;
  *
  * @author Priska
  */
-public class Pemain {
+public class Pemain extends Pixel{
     
 }
