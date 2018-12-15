@@ -60,7 +60,7 @@ public class Peta extends JPanel{
                         posisiX += jarak;
                         
                     } else if (item == '.') {
-                        
+                        posisiX += jarak;
                     }
                 }
                    
