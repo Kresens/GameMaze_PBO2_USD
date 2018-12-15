@@ -18,6 +18,7 @@ import javax.swing.JPanel;
 import static jdk.nashorn.internal.objects.NativeArray.map;
 import static jdk.nashorn.internal.objects.NativeDebug.map;
 import model.Pemain;
+import model.Pixel;
 import model.Tembok;
 
 /**
@@ -88,6 +89,7 @@ public class Peta extends JPanel{
           Peta.add(maze);
           for (int i = 0; i < Peta.size(); i++) {
               if (Peta.get(i) != null) {
+                  Pixel item = (Pixel) Peta.get(i);
                   
               }
           }
