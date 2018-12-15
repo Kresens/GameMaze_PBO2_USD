@@ -144,7 +144,8 @@ public class Peta extends JPanel {
                         } else if (cekBolaPemainTembok("r")) {
                             return;
                         } else {
-                            
+                            maze.Gerak(jarak, 0);
+                            repaint();
                         }
                     }
                 }
