@@ -174,7 +174,7 @@ public class Peta extends JPanel {
     }
 
     private boolean cekObjekNabrakTembok(Pixel pemain, String input) {
-        
+        boolean bantu = false;
     }
 
     private boolean cekPemainTembok(String u) {
