@@ -118,7 +118,7 @@ public class Peta extends JPanel{
                                return;
                                
                           } else if (cekBolaPemainTembok("u")) {
-                              
+                              return;
                           }
                       }
                   }
@@ -127,6 +127,10 @@ public class Peta extends JPanel{
       }
 
     private boolean cekObjekNabrakTembok(Pemain maze, String u) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private boolean cekBolaPemainTembok(String u) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
