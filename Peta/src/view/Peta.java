@@ -162,6 +162,8 @@ public class Peta extends JPanel {
                     }
                 } else if (in[0].equalsIgnoreCase("z")) {
                     
+                }  else {
+                    
                 }
 
             }
