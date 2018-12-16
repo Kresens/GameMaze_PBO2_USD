@@ -9,14 +9,14 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.io.File;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import view.Peta;
 
-
 public class Maze extends javax.swing.JFrame {
+
     Peta Peta;
     File file;
 
-    
     public Maze() {
 
         initComponents();
@@ -201,7 +201,7 @@ public class Maze extends javax.swing.JFrame {
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
 //        tekarea.setText(null);
-       
+
         int returnVal = jFileChooser1.showOpenDialog(this);
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             file = jFileChooser1.getSelectedFile();
@@ -229,7 +229,7 @@ public class Maze extends javax.swing.JFrame {
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
-           System.exit(0);
+        System.exit(0);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
@@ -270,7 +270,30 @@ public class Maze extends javax.swing.JFrame {
             }
         });
     }
-
+private void MainMenuItemActionPerformed(java.awt.event.ActionEvent evt) {
+        JOptionPane.showMessageDialog(null, "SELAMAT DATANG DI MAZE GAME !\n"
+                + "\n"
+                + "Gunakan perintah pada keyboard untuk \n"
+                + "menggerakkan pemain menuju tujuannya\n"
+                + "\n"
+                + "Format perintah :\n"
+                + "X(spasi)N\n"
+                + "\n"
+                + "X = arah gerakan\n"
+                + "N = jumlah langkah\n"
+                + "\n"
+                + "Arah Gerak :\n"
+                + "U = up/naik\n"
+                + "D = down/turun\n"
+                + "R = right/kanan\n"
+                + "L = left/kiri\n"
+                + "\n"
+                + "Anda Dapat Mereset, Mengsave \n"
+                + "Mengload Permainan Untuk Peta yang\n"
+                + "Sama.\n"
+                + "\n"
+                + "      **** SELAMAT BERMAIN **** ");
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PixelPanel;
     private javax.swing.JButton jButton1;
